@@ -1,19 +1,13 @@
 """Constants and utilities related to analysts configuration."""
 
-from agents.degen import degen_agent
-from agents.daddy import daddy_agent
+from agents.technicals import technical_analyst_agent
 
 # Define analyst configuration - single source of truth
 ANALYST_CONFIG = {
-    "degen": {
-        "display_name": "Degen",
-        "agent_func": degen_agent,
-        "order": 0,
-    },
-    "daddy": {
-        "display_name": "Dad",
-        "agent_func": dad_agent,
-        "order": 1,
+    "technical_analyst": {
+        "display_name": "Technical Analyst",
+        "agent_func": technical_analyst_agent,
+        "order": 6,
     }
 }
 
